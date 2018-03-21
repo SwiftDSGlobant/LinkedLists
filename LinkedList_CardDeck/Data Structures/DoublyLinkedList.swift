@@ -35,6 +35,18 @@ class DoublyLinkedList<T> {
         return node
     }
     
+    public var count: Int {
+        guard var node = head else {
+            return 0
+        }
+        var count = 1
+        while let next = node.next {
+            node = next
+            count += 1
+        }
+        return count
+    }
+    
     func append(value: T) {
         let newNode = Node(value: value)
         if let lastNode = last {
@@ -161,6 +173,23 @@ extension DoublyLinkedList {
             node = node!.next
         }
         return result
+    }
+    
+    func swapNodes(a: Node, b: Node) {
+        let node = a
+        a.next = b.next
+        a.next?.previous = a
+        a.previous = b.previous
+        a.previous?.next = a
+
+        b.next = node.next
+        b.next?.previous = b
+        b.previous = node.previous
+        b.previous?.next = b
+    }
+    
+    public func shuffle() {
+        
     }
     
 }
