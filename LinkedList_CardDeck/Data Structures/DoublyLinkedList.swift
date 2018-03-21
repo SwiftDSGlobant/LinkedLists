@@ -114,6 +114,7 @@ class DoublyLinkedList<T> {
     
     public func removeLast() -> T? {
         guard !isEmpty else { return nil }
+        tail = last?.previous
         return remove(node: last!)
     }
     
