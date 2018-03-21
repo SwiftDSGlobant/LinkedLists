@@ -13,6 +13,9 @@
 		BECFEF6E2061BA1A00F2D9DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECFEF6D2061BA1A00F2D9DA /* Assets.xcassets */; };
 		BECFEF712061BA1A00F2D9DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECFEF6F2061BA1A00F2D9DA /* LaunchScreen.storyboard */; };
 		BECFEF7C2061BA1A00F2D9DA /* LinkedList_CardDeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFEF7B2061BA1A00F2D9DA /* LinkedList_CardDeckTests.swift */; };
+		BECFEF882061BA3200F2D9DA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFEF872061BA3200F2D9DA /* LinkedList.swift */; };
+		BECFEF8A206246D900F2D9DA /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFEF89206246D900F2D9DA /* LinkedListNode.swift */; };
+		BECFEF8C2062472200F2D9DA /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFEF8B2062472200F2D9DA /* DoublyLinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		BECFEF772061BA1A00F2D9DA /* LinkedList_CardDeckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedList_CardDeckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECFEF7B2061BA1A00F2D9DA /* LinkedList_CardDeckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList_CardDeckTests.swift; sourceTree = "<group>"; };
 		BECFEF7D2061BA1B00F2D9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BECFEF872061BA3200F2D9DA /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		BECFEF89206246D900F2D9DA /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
+		BECFEF8B2062472200F2D9DA /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		BECFEF652061BA1A00F2D9DA /* LinkedList_CardDeck */ = {
 			isa = PBXGroup;
 			children = (
+				BECFEF862061BA2400F2D9DA /* Data Structures */,
 				BECFEF662061BA1A00F2D9DA /* AppDelegate.swift */,
 				BECFEF682061BA1A00F2D9DA /* ViewController.swift */,
 				BECFEF6A2061BA1A00F2D9DA /* Main.storyboard */,
@@ -94,6 +101,16 @@
 				BECFEF7D2061BA1B00F2D9DA /* Info.plist */,
 			);
 			path = LinkedList_CardDeckTests;
+			sourceTree = "<group>";
+		};
+		BECFEF862061BA2400F2D9DA /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				BECFEF89206246D900F2D9DA /* LinkedListNode.swift */,
+				BECFEF872061BA3200F2D9DA /* LinkedList.swift */,
+				BECFEF8B2062472200F2D9DA /* DoublyLinkedList.swift */,
+			);
+			path = "Data Structures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECFEF8C2062472200F2D9DA /* DoublyLinkedList.swift in Sources */,
+				BECFEF8A206246D900F2D9DA /* LinkedListNode.swift in Sources */,
+				BECFEF882061BA3200F2D9DA /* LinkedList.swift in Sources */,
 				BECFEF692061BA1A00F2D9DA /* ViewController.swift in Sources */,
 				BECFEF672061BA1A00F2D9DA /* AppDelegate.swift in Sources */,
 			);
