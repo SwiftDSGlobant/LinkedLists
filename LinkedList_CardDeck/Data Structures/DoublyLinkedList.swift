@@ -176,16 +176,24 @@ extension DoublyLinkedList {
         return result
     }
     
+    func swapValues(a: Node, b: Node) {
+        let value = a.value
+        a.value = b.value
+        b.value = value
+    }
+    
     func swapNodes(a: Node, b: Node) {
-        let node = a
+        let next = a.next
+        let previous = a.previous
+        
         a.next = b.next
         a.next?.previous = a
         a.previous = b.previous
         a.previous?.next = a
 
-        b.next = node.next
+        b.next = next
         b.next?.previous = b
-        b.previous = node.previous
+        b.previous = previous
         b.previous?.next = b
     }
     
@@ -193,12 +201,13 @@ extension DoublyLinkedList {
         var node: Node? = tail
         var aux: Node?
         var position: Int = count - 1
-        while node != nil, node?.previous != nil {
+        while node?.previous != nil, position > 0 {
             position -= 1
             let randomIndex = Int(arc4random_uniform(UInt32(position)))
             aux = self.node(atIndex: randomIndex)
-            swapNodes(a: node!, b: aux!)
-            node = node?.previous
+            let previous = node?.previous
+            swapValues(a: node!, b: aux!)
+            node = previous
             aux = nil
         }
     }

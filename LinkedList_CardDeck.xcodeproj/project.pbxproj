@@ -73,6 +73,9 @@
 		BECFEFFC2063103400F2D9DA /* 6_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BECFEFC42063103400F2D9DA /* 6_of_spades.png */; };
 		BECFEFFD2063103400F2D9DA /* 4_of_spades.png in Resources */ = {isa = PBXBuildFile; fileRef = BECFEFC52063103400F2D9DA /* 4_of_spades.png */; };
 		BECFF0002063104A00F2D9DA /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFEFFF2063104A00F2D9DA /* Deck.swift */; };
+		BECFF0022064ABF000F2D9DA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFF0012064ABF000F2D9DA /* Card.swift */; };
+		BECFF0062064AC9800F2D9DA /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECFF0052064AC9800F2D9DA /* CardView.xib */; };
+		BECFF0082064ACA200F2D9DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFF0072064ACA200F2D9DA /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +159,9 @@
 		BECFEFC42063103400F2D9DA /* 6_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_of_spades.png; sourceTree = "<group>"; };
 		BECFEFC52063103400F2D9DA /* 4_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_of_spades.png; sourceTree = "<group>"; };
 		BECFEFFF2063104A00F2D9DA /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		BECFF0012064ABF000F2D9DA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		BECFF0052064AC9800F2D9DA /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		BECFF0072064ACA200F2D9DA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,8 +206,8 @@
 				BECFEFFE2063103D00F2D9DA /* Deck */,
 				BECFEF8D2063101100F2D9DA /* Assets */,
 				BECFEF862061BA2400F2D9DA /* Data Structures */,
+				BECFF0032064AC6100F2D9DA /* Views */,
 				BECFEF662061BA1A00F2D9DA /* AppDelegate.swift */,
-				BECFEF682061BA1A00F2D9DA /* ViewController.swift */,
 				BECFEF6A2061BA1A00F2D9DA /* Main.storyboard */,
 				BECFEF6D2061BA1A00F2D9DA /* Assets.xcassets */,
 				BECFEF6F2061BA1A00F2D9DA /* LaunchScreen.storyboard */,
@@ -296,8 +302,27 @@
 			isa = PBXGroup;
 			children = (
 				BECFEFFF2063104A00F2D9DA /* Deck.swift */,
+				BECFF0012064ABF000F2D9DA /* Card.swift */,
 			);
 			path = Deck;
+			sourceTree = "<group>";
+		};
+		BECFF0032064AC6100F2D9DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BECFF0042064AC7000F2D9DA /* Custom Views */,
+				BECFEF682061BA1A00F2D9DA /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BECFF0042064AC7000F2D9DA /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				BECFF0072064ACA200F2D9DA /* CardView.swift */,
+				BECFF0052064AC9800F2D9DA /* CardView.xib */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +410,7 @@
 			files = (
 				BECFEFEF2063103400F2D9DA /* 4_of_clubs.png in Resources */,
 				BECFEFD72063103400F2D9DA /* jack_of_diamonds.png in Resources */,
+				BECFF0062064AC9800F2D9DA /* CardView.xib in Resources */,
 				BECFEFD62063103400F2D9DA /* ace_of_spades.png in Resources */,
 				BECFEFFD2063103400F2D9DA /* 4_of_spades.png in Resources */,
 				BECFEFCA2063103400F2D9DA /* jack_of_hearts.png in Resources */,
@@ -461,9 +487,11 @@
 			files = (
 				BECFF0002063104A00F2D9DA /* Deck.swift in Sources */,
 				BECFEF8C2062472200F2D9DA /* DoublyLinkedList.swift in Sources */,
+				BECFF0022064ABF000F2D9DA /* Card.swift in Sources */,
 				BECFEF8A206246D900F2D9DA /* LinkedListNode.swift in Sources */,
 				BECFEF882061BA3200F2D9DA /* LinkedList.swift in Sources */,
 				BECFEF692061BA1A00F2D9DA /* ViewController.swift in Sources */,
+				BECFF0082064ACA200F2D9DA /* CardView.swift in Sources */,
 				BECFEF672061BA1A00F2D9DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
