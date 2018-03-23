@@ -190,7 +190,17 @@ extension DoublyLinkedList {
     }
     
     public func shuffle() {
-        
+        var node: Node? = tail
+        var aux: Node?
+        var position: Int = count - 1
+        while node != nil, node?.previous != nil {
+            position -= 1
+            let randomIndex = Int(arc4random_uniform(UInt32(position)))
+            aux = self.node(atIndex: randomIndex)
+            swapNodes(a: node!, b: aux!)
+            node = node?.previous
+            aux = nil
+        }
     }
     
 }
