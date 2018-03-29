@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BECA2D14206D133600CC408D /* StackNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA2D13206D133600CC408D /* StackNode.swift */; };
+		BECA2D16206D136200CC408D /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA2D15206D136200CC408D /* Stack.swift */; };
 		BECFEF672061BA1A00F2D9DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFEF662061BA1A00F2D9DA /* AppDelegate.swift */; };
 		BECFEF692061BA1A00F2D9DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFEF682061BA1A00F2D9DA /* ViewController.swift */; };
 		BECFEF6C2061BA1A00F2D9DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECFEF6A2061BA1A00F2D9DA /* Main.storyboard */; };
@@ -76,6 +78,9 @@
 		BECFF0022064ABF000F2D9DA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFF0012064ABF000F2D9DA /* Card.swift */; };
 		BECFF0062064AC9800F2D9DA /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECFF0052064AC9800F2D9DA /* CardView.xib */; };
 		BECFF0082064ACA200F2D9DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFF0072064ACA200F2D9DA /* CardView.swift */; };
+		BECFF00A206588AA00F2D9DA /* DragDropManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFF009206588AA00F2D9DA /* DragDropManager.swift */; };
+		BECFF01420658BD200F2D9DA /* DragDropiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECFF01320658BD200F2D9DA /* DragDropiOS.swift */; };
+		BEEE2F8B206D1CF20045B534 /* CardMount.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE2F8A206D1CF20045B534 /* CardMount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +94,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BECA2D13206D133600CC408D /* StackNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackNode.swift; sourceTree = "<group>"; };
+		BECA2D15206D136200CC408D /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		BECFEF632061BA1A00F2D9DA /* LinkedList_CardDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedList_CardDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECFEF662061BA1A00F2D9DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECFEF682061BA1A00F2D9DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +169,9 @@
 		BECFF0012064ABF000F2D9DA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		BECFF0052064AC9800F2D9DA /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		BECFF0072064ACA200F2D9DA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		BECFF009206588AA00F2D9DA /* DragDropManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragDropManager.swift; sourceTree = "<group>"; };
+		BECFF01320658BD200F2D9DA /* DragDropiOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragDropiOS.swift; sourceTree = "<group>"; };
+		BEEE2F8A206D1CF20045B534 /* CardMount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +192,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BECA2D17206D139C00CC408D /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				BECA2D13206D133600CC408D /* StackNode.swift */,
+				BECFEF89206246D900F2D9DA /* LinkedListNode.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
 		BECFEF5A2061BA1A00F2D9DA = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +227,8 @@
 				BECFEF862061BA2400F2D9DA /* Data Structures */,
 				BECFF0032064AC6100F2D9DA /* Views */,
 				BECFEF662061BA1A00F2D9DA /* AppDelegate.swift */,
+				BECFF009206588AA00F2D9DA /* DragDropManager.swift */,
+				BECFF01320658BD200F2D9DA /* DragDropiOS.swift */,
 				BECFEF6A2061BA1A00F2D9DA /* Main.storyboard */,
 				BECFEF6D2061BA1A00F2D9DA /* Assets.xcassets */,
 				BECFEF6F2061BA1A00F2D9DA /* LaunchScreen.storyboard */,
@@ -228,7 +249,8 @@
 		BECFEF862061BA2400F2D9DA /* Data Structures */ = {
 			isa = PBXGroup;
 			children = (
-				BECFEF89206246D900F2D9DA /* LinkedListNode.swift */,
+				BECA2D17206D139C00CC408D /* Node */,
+				BECA2D15206D136200CC408D /* Stack.swift */,
 				BECFEF872061BA3200F2D9DA /* LinkedList.swift */,
 				BECFEF8B2062472200F2D9DA /* DoublyLinkedList.swift */,
 			);
@@ -321,6 +343,7 @@
 			children = (
 				BECFF0072064ACA200F2D9DA /* CardView.swift */,
 				BECFF0052064AC9800F2D9DA /* CardView.xib */,
+				BEEE2F8A206D1CF20045B534 /* CardMount.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -485,14 +508,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECA2D14206D133600CC408D /* StackNode.swift in Sources */,
+				BECFF01420658BD200F2D9DA /* DragDropiOS.swift in Sources */,
 				BECFF0002063104A00F2D9DA /* Deck.swift in Sources */,
 				BECFEF8C2062472200F2D9DA /* DoublyLinkedList.swift in Sources */,
+				BECA2D16206D136200CC408D /* Stack.swift in Sources */,
 				BECFF0022064ABF000F2D9DA /* Card.swift in Sources */,
 				BECFEF8A206246D900F2D9DA /* LinkedListNode.swift in Sources */,
 				BECFEF882061BA3200F2D9DA /* LinkedList.swift in Sources */,
 				BECFEF692061BA1A00F2D9DA /* ViewController.swift in Sources */,
 				BECFF0082064ACA200F2D9DA /* CardView.swift in Sources */,
+				BECFF00A206588AA00F2D9DA /* DragDropManager.swift in Sources */,
 				BECFEF672061BA1A00F2D9DA /* AppDelegate.swift in Sources */,
+				BEEE2F8B206D1CF20045B534 /* CardMount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

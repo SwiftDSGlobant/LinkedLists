@@ -12,7 +12,12 @@ class Deck {
     
     lazy var cards: DoublyLinkedList<Card> = DoublyLinkedList<Card>()
     
-    
+    static func randomCard() -> Card {
+        let fullDeck = sample()
+        let random = Int(arc4random_uniform(UInt32(fullDeck.count)))
+        let card = fullDeck.node(atIndex: random)
+        return card!.value
+    }
     
     static func sample() -> DoublyLinkedList<Card> {
         let sampleDeck: DoublyLinkedList<Card> = DoublyLinkedList<Card>()
